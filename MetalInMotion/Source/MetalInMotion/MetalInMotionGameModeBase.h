@@ -1,17 +1,23 @@
-// @Copyright devdastour 2021
+
 
 #pragma once
 
 #include "CoreMinimal.h"
-#include "GameFramework/GameModeBase.h"
+#include "GameFramework/GameMode.h"
 #include "MetalInMotionGameModeBase.generated.h"
 
+
 /**
- * 
- */
+The base game mode for Metal in Motion.
+*********************************************************************************/
+
 UCLASS()
-class METALINMOTION_API AMetalInMotionGameModeBase : public AGameModeBase
+class METALINMOTION_API AMetalInMotionGameModeBase : public AGameMode
 {
 	GENERATED_BODY()
 	
+public:
+
+	// Construct the game mode, assigning a debugging HUD class.
+	AMetalInMotionGameModeBase();
 };

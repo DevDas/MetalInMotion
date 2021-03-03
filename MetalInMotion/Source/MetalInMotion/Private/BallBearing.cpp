@@ -1,6 +1,14 @@
-// @Copyright devdastour 2021
+/**
+
+Main ball bearing implementation.
+
+Original author: Rob Baker.
+Current maintainer: Rob Baker.
+
+*********************************************************************************/
 
 #include "BallBearing.h"
+
 
 /**
 Create a static mesh for this ball bearing on object construction.
@@ -19,4 +27,31 @@ ABallBearing::ABallBearing()
 	BallMesh->SetSimulatePhysics(true);
 
 	SetRootComponent(BallMesh);
+}
+
+
+/**
+Called when the game starts or when spawned.
+*********************************************************************************/
+
+void ABallBearing::BeginPlay()
+{
+	Super::BeginPlay();
+
+	InitialLocation = BallMesh->GetComponentLocation();
+
+	BallMesh->SetLinearDamping(0.5f);
+	BallMesh->SetAngularDamping(0.5f);
+}
+
+
+/**
+Control the movement of the ball bearing, called every frame.
+*********************************************************************************/
+
+void ABallBearing::Tick(float deltaSeconds)
+{
+	Super::Tick(deltaSeconds);
+
+	InContact = false;
 }

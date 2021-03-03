@@ -1,4 +1,3 @@
-// @Copyright devdastour 2021
 
 #pragma once
 
@@ -82,4 +81,7 @@ private:
 
 	// Timer used to control the dashing of the ball bearing.
 	float DashTimer = 0.0f;
+
+	// Allow the ball bearing HUD unfettered access to this class.
+	friend class ABallBearingHUD;
 };
