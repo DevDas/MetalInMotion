@@ -1,3 +1,11 @@
+/**
+
+Main ball bearing implementation.
+
+Original author: Rob Baker.
+Current maintainer: Rob Baker.
+
+*********************************************************************************/
 
 #pragma once
 
@@ -28,7 +36,7 @@ public:
 	// Is the ball bearing attractive to magnets?
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = BallBearing)
 		bool Magnetized = true;
-		
+
 	// Reset the location of the ball bearing to its initial location when spawned.
 	UFUNCTION(BlueprintCallable, Category="Ball Bearing")
 		void ResetLocation() const

@@ -1,4 +1,3 @@
-
 #pragma once
 
 #include "BallBearing.h"
@@ -52,6 +51,19 @@ protected:
 
 	// Called to bind functionality to input.
 	virtual void SetupPlayerInputComponent(class UInputComponent* playerInputComponent) override;
+
+	UFUNCTION(BlueprintCallable)
+	bool TestFunction(int32 Param1,
+		int32& Param2, 
+		TArray<float> Param3,
+		TArray<float>& Param4,
+		const TArray<float>& Param5,
+		AActor* Param6,
+		AActor*& Param7,
+		float& Param8)
+	{
+		return false;
+	};
 
 private:
 

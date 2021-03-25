@@ -1,3 +1,11 @@
+/**
+
+Debugging HUD for Metal in Motion.
+
+Original author: Rob Baker.
+Current maintainer: Rob Baker.
+
+*********************************************************************************/
 
 #pragma once
 

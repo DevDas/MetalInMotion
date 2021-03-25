@@ -1,4 +1,11 @@
+/**
 
+The base game mode for Metal in Motion.
+
+Original author: Rob Baker.
+Current maintainer: Rob Baker.
+
+*********************************************************************************/
 
 #include "MetalInMotionGameModeBase.h"
 #include "BallBearingHUD.h"

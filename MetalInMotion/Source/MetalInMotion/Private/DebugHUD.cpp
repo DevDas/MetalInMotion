@@ -1,4 +1,11 @@
+/**
 
+Debugging HUD for Metal in Motion.
+
+Original author: Rob Baker.
+Current maintainer: Rob Baker.
+
+*********************************************************************************/
 
 #include "DebugHUD.h"
 #include "UObject/ConstructorHelpers.h"

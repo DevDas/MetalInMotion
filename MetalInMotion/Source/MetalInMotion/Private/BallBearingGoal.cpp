@@ -1,3 +1,13 @@
+/**
+
+Goals for ball bearings in Metal in Motion.
+
+Original author: Rob Baker.
+Current maintainer: Rob Baker.
+
+These are generally used as the parent actor for goals within the game.
+
+*********************************************************************************/
 
 #include "BallBearingGoal.h"
 #include "Components/SphereComponent.h"

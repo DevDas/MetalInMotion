@@ -1,3 +1,11 @@
+/**
+
+Ball bearing HUD for Metal in Motion.
+
+Original author: Rob Baker.
+Current maintainer: Rob Baker.
+
+*********************************************************************************/
 
 #include "BallBearingHUD.h"
 #include "PlayerBallBearing.h"
