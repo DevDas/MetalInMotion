@@ -1,3 +1,11 @@
+/**
+
+Player ball bearing implementation.
+
+Original author: Rob Baker.
+Current maintainer: Rob Baker.
+
+*********************************************************************************/
 
 #include "PlayerBallBearing.h"
 #include "GameFramework/PlayerInput.h"
